@@ -1,11 +1,3 @@
 machine:
   xcode:
     version: "8.2"
-dependencies:
-  override:
-    - bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3 --without development
-  cache_directories:
-    - vendor/bundle
-test:
-  override:
-    - fastlane test
